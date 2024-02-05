@@ -21,7 +21,7 @@ jobs:
           echo Welcome to TINITIATE workflows 
 
       - name: Use local hello-world-action
-        uses: ./.github/actions/python-action
+        uses: ./github/actions/python-action
 
 #  Run-PSScriptAnalyzer-on-Windows:
 #    name: Run PSScriptAnalyzer on Windows
