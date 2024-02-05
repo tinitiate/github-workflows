@@ -18,7 +18,7 @@ jobs:
       
       - name: Run the custom action
         id: print-echo
-        uses: ./github/actions/python-action
+        uses: ./.github/actions/python-action
 
 #  Run-PSScriptAnalyzer-on-Windows:
 #    name: Run PSScriptAnalyzer on Windows
