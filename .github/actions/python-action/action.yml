@@ -4,5 +4,6 @@ description: 'A simple action to print an echo statement.'
 
 runs:
   using: 'shell'
-  command: |
-    echo "Message from Python Action"
+  steps:
+    - run: echo "Message from Python Action"
+      shell: bash
