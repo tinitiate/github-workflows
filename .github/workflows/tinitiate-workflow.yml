@@ -10,12 +10,15 @@ jobs:
     name: Run npm on Ubuntu
     runs-on: ubuntu-latest
     steps:
+      
       - uses: actions/checkout@v4
+
+      - name: Print Message in Workflow
+        run: echo "This message is from the workflow!"      
+      
       - name: Run the custom action
         id: print-echo
         uses: ./.github/actions/python-action
-        with:
-          message: 'Hello from the workflow!'
 
 #  Run-PSScriptAnalyzer-on-Windows:
 #    name: Run PSScriptAnalyzer on Windows
