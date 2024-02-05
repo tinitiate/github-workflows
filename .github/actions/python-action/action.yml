@@ -3,7 +3,7 @@ name: 'Print Echo Statement'
 description: 'A simple action to print an echo statement.'
 
 runs:
-  using: 'shell'
+  using: 'node16'
   steps:
     - run: echo "Message from Python Action"
       shell: bash
