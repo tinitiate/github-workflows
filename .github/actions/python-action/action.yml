@@ -1,5 +1,13 @@
-steps:
-  - name: Python Action
-  - uses: actions/checkout@v4
-    run: |
-      echo This is a message from Python Actions
+# .github/actions/my-action/action.yml
+name: 'Print Echo Statement'
+description: 'A simple action to print an echo statement.'
+
+runs:
+  using: 'docker'
+  image: 'alpine:latest'
+
+inputs:
+  message:
+    description: 'The message to print.'
+    required: true
+    default: 'Hello from python-actions'

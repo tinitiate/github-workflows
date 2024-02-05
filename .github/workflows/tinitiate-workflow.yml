@@ -11,17 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - name: Run the custom action
+        id: print-echo
+        uses: ./.github/actions/python-action
         with:
-          node-version: '14'
-      - run: npm help
-      
-      - name: Write a message
-        run: |
-          echo Welcome to TINITIATE workflows 
-
-      - name: Use local hello-world-action
-        uses: ./github/actions/python-action
+          message: 'Hello from the workflow!'
 
 #  Run-PSScriptAnalyzer-on-Windows:
 #    name: Run PSScriptAnalyzer on Windows
