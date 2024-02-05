@@ -15,6 +15,11 @@ jobs:
         with:
           node-version: '14'
       - run: npm help
+      
+      - name: Write a message
+      run: |
+        echo Welcome to TINITIATE workflows 
+            
 
   Run-PSScriptAnalyzer-on-Windows:
     name: Run PSScriptAnalyzer on Windows
