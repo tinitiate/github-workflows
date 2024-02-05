@@ -1,3 +1,4 @@
-- name: Python Action
-  run: |
-    echo This is a message from Python Actions
+steps:
+  - name: Python Action
+    run: |
+      echo This is a message from Python Actions
